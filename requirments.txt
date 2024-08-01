@@ -1,0 +1,8 @@
+# Example packages for Jupyter Notebook
+jupyter
+numpy
+pandas
+matplotlib
+
+# AWS SDK for Python
+boto3
