@@ -1,0 +1,182 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+.installed.cfg
+*.egg
+dist/
+build/
+*.whl
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Jupyter Notebook hidden directories
+/.ipynb_checkpoints
+
+# Virtualenv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.spyderproject
+.ropeproject
+
+# PyCharm
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+# Pytest
+.cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# IPython
+.profile_default/
+ipython_config.py
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# dotenv
+.env
+.env.local
+.env.production
+.env.test
+.env.*.local
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# PEP 517
+__pypackages__/
+
+# docker
+*.log
+*.pid
+*.seed
+*.pid.lock
+*.sqlite3
+
+# docker-compose
+docker-compose.override.yml
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# data
+*.csv
+*.dat
+*.db
+*.sqlite
+*.zip
+*.tar.gz
+*.gz
+*.tgz
+
+#notebook
+notebook/.local/share/jupyter/runtime/
+notebook/.ipython/profile_default/security/
+notebook/.ipython/profile_default/pid/
+notebook/.local/share/jupyter/notebook_secret
+
+# backups
+*.bak
+
+# fastapi
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+
+# mypy
+.mypy_cache/
+dmypy.json
+dmypy.json
+.cache
+
+# coverage
+.coverage
+coverage.*
+htmlcov
+.tox
+.nox
+
+# Pyre type checker
+.pyre/
