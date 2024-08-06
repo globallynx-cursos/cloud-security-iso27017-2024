@@ -154,6 +154,9 @@ docker-compose.yml
 # Ignorar configuraciones locales de Jupyter Notebook
 .local
 .ipynb_checkpoints
+*.local
+*.jupyter
+*.ipython
 
 # Ignorar archivos de caché de Python
 __pycache__
