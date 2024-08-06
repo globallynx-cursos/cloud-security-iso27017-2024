@@ -151,10 +151,21 @@ docker-compose.yml
 *.tgz
 
 #notebook
-notebook/.local/share/jupyter/runtime/
-notebook/.ipython/profile_default/security/
-notebook/.ipython/profile_default/pid/
-notebook/.local/share/jupyter/notebook_secret
+# Ignorar configuraciones locales de Jupyter Notebook
+.local
+.ipynb_checkpoints
+
+# Ignorar archivos de caché de Python
+__pycache__
+*.pyc
+*.pyo
+
+# Ignorar archivo de sistema MacOS
+.DS_Store
+
+# Ignorar otros archivos y directorios innecesarios
+notebook/.local/share/jupyter/runtime
+
 
 # backups
 *.bak

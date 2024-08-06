@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS expenses (
+    id SERIAL PRIMARY KEY,
+    description VARCHAR(100) NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    user_id INTEGER REFERENCES users(id)
+);

@@ -1,0 +1,9 @@
+.local
+.ipynb_checkpoints
+__pycache__
+*.pyc
+*.pyo
+.DS_Store
+notebook/.local/share/jupyter/runtime
+notebook/.ipython/profile_default/pid
+notebook/.ipython/profile_default/security
