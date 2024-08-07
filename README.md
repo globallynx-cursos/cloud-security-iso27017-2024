@@ -52,8 +52,7 @@ export AWS_DEFAULT_REGION=your_aws_region
 Run the Docker container, mapping port 8888 and mounting the current directory:
 
 ```sh 
-docker run -p 8888:8888 -v $(pwd)/notebook:/root demo-notebook 
-
+docker run -p 8888:8888 -v $(pwd)/notebook:/root -v /var/run/docker.sock:/var/run/docker.sock --privileged demo-notebook
 ```
 
 ### 6. Access Jupyter Notebook
