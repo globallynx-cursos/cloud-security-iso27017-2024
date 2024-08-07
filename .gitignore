@@ -136,10 +136,6 @@ __pypackages__/
 # docker-compose
 docker-compose.override.yml
 
-# Docker
-Dockerfile
-docker-compose.yml
-
 # data
 *.csv
 *.dat

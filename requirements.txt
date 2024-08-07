@@ -6,3 +6,6 @@ matplotlib
 
 # AWS SDK for Python
 boto3
+
+# Paramiko is a Python (2.7, 3.4+) implementation of the SSHv2 protocol, providing both client and server functionality.
+paramiko
