@@ -153,6 +153,7 @@ docker-compose.override.yml
 *.local
 *.jupyter
 *.ipython
+*.docker
 
 # Ignorar archivos de caché de Python
 __pycache__
