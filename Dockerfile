@@ -15,11 +15,32 @@ RUN apt-get update && \
     apt-get update && \
     apt-get install -y docker-ce docker-ce-cli containerd.io
 
+# Install AWS CLI
+RUN apt-get install -y unzip && \
+    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
+    unzip awscliv2.zip && \
+    ./aws/install && \
+    rm -rf aws awscliv2.zip
+
 # Install Jupyter
 RUN pip install jupyter
 
 # Set the working directory
 WORKDIR /root
+
+# Accept build arguments for AWS credentials
+ARG AWS_ACCESS_KEY_ID
+ARG AWS_SECRET_ACCESS_KEY
+ARG AWS_DEFAULT_REGION
+
+# Set environment variables for AWS credentials
+ENV AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+ENV AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+ENV AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION
+
+# Copy the requirements file and install dependencies
+COPY requirements.txt /root/requirements.txt
+RUN pip install -r requirements.txt
 
 # Copy the current directory contents into the container at /root
 COPY . /root
